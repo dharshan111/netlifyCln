@@ -1,15 +1,23 @@
-const hamburger = document.getElementById("hamburger");
-const navbar = document.querySelector(".navbar");
-const dropdowns = document.querySelectorAll(".dropdown");
+const hamburge_image = document.getElementById("hamberg-image");
+const navbarLists=document.getElementById('navbar-lists');
+const sign_in_button=document.getElementById('sign-button');
+let itsOpen=false;
 
-hamburger.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});
+hamburge_image.addEventListener('click',()=>{
+  if(!itsOpen){ 
+  navbarLists.classList.add('navbar-lists-return');
+  sign_in_button.classList.add('sign-return');
+  // hamburge_image.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
+  itsOpen=true;
+  }
+  else{
+  navbarLists.classList.remove('navbar-lists-return');
+  sign_in_button.classList.remove ('sign-return')
+  //hamburge_image.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  itsOpen=false;
+  }
+})
 
-dropdowns.forEach(drop => {
-  const button = drop.querySelector(".dropbtn");
-  button.addEventListener("click", (e) => {
-    e.preventDefault();
-    drop.classList.toggle("active");
-  });
-});
+
+
+

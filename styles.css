@@ -313,34 +313,75 @@ h1{
 
 
 @media (min-width:320px) and (max-width:1001px){
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+     min-width: 50%;   
+    }
+     .logo-png{
+        align-self: flex-start;
+        height: 40px;
+        padding: 0;
+    } 
+
     ul{
         display: flex;
         flex-direction: column;
+        align-self: center;
+        width: 100%;
+    }
+    
+    .nav{
+        display: none;
+        position: relative;
+        left: 50%;
+        right: 50%;
+    }
+    .navbar-lists-return{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .btn3{
         display: none;
     }
     header{
-        padding:15px;
-        padding-bottom:10px;
+        display: flex;
+       position: fixed;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+        padding:15px 15px 15px 15px;
     }
     .fa-bars{
         display: flex;
     }
 
     .sign-in{
-        text-align: center;
-        display: flex;
+        display: none;
         margin-top: 40px;
-        /* width: 100%; */
-
+         width: 100%;
+        
+        position: relative;
+        right: 35%;
+        left: 50%;
+        margin-right: 50px;
+        text-align: center;
+        
+    }
+    .sign-return{
+    display: flex;
+    justify-content: center;
+    align-items: center;        
     }
 
     .btn3-sign{
         display: flex;
         background-color: aqua;
         padding: 10px;
-        /* width:100%; */
+        width:100%;
         text-align: center;
         border-radius: 5px;
     }
@@ -349,11 +390,6 @@ h1{
         flex-direction: row;
         align-items: center;
 
-    }
-    .nav_list{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
     }
 
     .nav-2{
