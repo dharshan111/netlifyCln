@@ -324,12 +324,14 @@ h1{
         height: 40px;
         padding: 0;
     } 
+
     ul{
         display: flex;
         flex-direction: column;
         align-self: center;
         width: 100%;
     }
+    
     .nav{
         display: none;
         position: relative;
