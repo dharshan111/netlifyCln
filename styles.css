@@ -363,7 +363,14 @@ h1{
 
 
 
-
+.section-4{
+    margin-top: 15px;
+    padding-bottom:50px;
+    border: 1px solid rgb(235, 228, 228);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 
 .table-container {
@@ -376,6 +383,8 @@ h1{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 4px; 
     overflow-x: auto; 
+
+    
 }
 
 table {
@@ -455,7 +464,40 @@ th, td {
 }
 
 
+.section-5{
+    margin-top: 80px;
+    padding-bottom:50px;
+    border: 1px solid rgb(235, 228, 228);
+    border-radius: 10px;
+    padding:45px;
+    box-shadow:#63636333 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
+.para-textii {
+    margin-block: 1rem;
+    flex-basis: 15em;
+    line-height: 30px;
+    flex-grow: 1;
+    font-size: 25px;
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    font-family: "Geist", sans-serif;
+    max-width: 700px;
+}
 
+strong, .paragrphy{
+    font-family: "Geist", sans-serif;
+}
 
+.section-6{
+    margin-top: 40px;
+}
