@@ -40,7 +40,7 @@ ul, li, a{
 
 
 .logo-png{
-    background-color:#0c0c0c;
+    background-color:#000000;
     max-width: 150px;
 }
 
@@ -123,15 +123,32 @@ h2{
 }
 
 
-.firstpara{
-    color: #ebe3e3;
-    font-size: 20px;
+/* .firstpara{
+    color: #cbc1c1;
+    font-size: 40px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     font-weight: 550;
-    max-width:590px;
     word-spacing: 2px;
-    line-height: 30px;
-    font-family: "Geist", sans-serif;   
+    line-height: 35px;
+    font-family: "Geist", sans-serif;
+} */
+
+
+
+.firstpara{
+    font-size: 30px;
+    color:#e9ecef;
+    text-align: center;
+    font-weight: 550;
+    word-spacing: 2px;
+    line-height: 35px;
+    font-family: "Geist", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.8em;
+    max-width: 868px;
 }
 
 
@@ -152,7 +169,7 @@ h2{
     display: flex;
     align-items: center;
     margin-top: 65px;
-    gap: 40px;
+    gap: 15px;
 }
 
 .a-tag:hover{
@@ -226,10 +243,9 @@ h2{
 
 .section-3{
     margin-top: 200px;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column; */
+    flex-direction: column;
 }
 
 
@@ -248,10 +264,9 @@ h1{
 .three-box{
     display: flex;
     justify-content: space-around; 
-    /* flex-direction: column; */
     padding: 30px; 
+    justify-content: center;
 }
-
 
 .imag-icon-1{
     padding: 50px;
@@ -270,18 +285,6 @@ h1{
     display: grid;
     grid-template-columns: repeat(3,1fr,1fr);
 }
-/* 
-.imagess{
-    width: 8.75rem;
-    height: 8.75rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#fff;
-
-} */
-
 
 .heading{
     font-size: 25px;
@@ -312,90 +315,9 @@ h1{
 
 
 
-@media (min-width:320px) and (max-width:1001px){
-    .nav_list{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-     min-width: 50%;   
-    }
-     .logo-png{
-        align-self: flex-start;
-        height: 40px;
-        padding: 0;
-    } 
 
-    ul{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-    }
-    
-    .nav{
-        display: none;
-        position: relative;
-        left: 50%;
-        right: 50%;
-    }
-    .navbar-lists-return{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .btn3{
-        display: none;
-    }
-    header{
-        display: flex;
-       position: fixed;
-        top: 0;
-        z-index: 10000;
-        width: 100%;
-        padding:15px 15px 15px 15px;
-    }
-    .fa-bars{
-        display: flex;
-    }
 
-    .sign-in{
-        display: none;
-        margin-top: 40px;
-         width: 100%;
-        
-        position: relative;
-        right: 35%;
-        left: 50%;
-        margin-right: 50px;
-        text-align: center;
-        
-    }
-    .sign-return{
-    display: flex;
-    justify-content: center;
-    align-items: center;        
-    }
 
-    .btn3-sign{
-        display: flex;
-        background-color: aqua;
-        padding: 10px;
-        width:100%;
-        text-align: center;
-        border-radius: 5px;
-    }
-    .nav-2{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-    }
-
-    .nav-2{
-        align-self: flex-start;
-    }    
-}
 
 
 
@@ -443,7 +365,7 @@ th, td {
 }
 
 
-.section-header td {
+.section-header th {
     background-color: #343a40; 
     color: #ffffff; 
     font-weight: 600;
@@ -455,7 +377,7 @@ th, td {
 
 .content-row td {
     color: #495057;
-    border-bottom: 1px solid #e9ecef;
+    border: 1px solid #e9ecef;
 }
 
 .content-row td:first-child {
@@ -465,8 +387,9 @@ th, td {
 }
 
 
-.alt-row td {
+.content-row th {
     background-color: #f7f7f7; 
+    border-bottom: 1px solid #e9ecef;
 }
 
 .content-row td:not(:first-child) {
@@ -487,18 +410,55 @@ th, td {
     font-weight: 900;
 }
 
+
+
+
+.bottom-list{
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+    padding: 20px; 
+    font-size: 15px;
+}
+
+.final-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.copy-right{
+    font-size: 15px;
+    margin: 30px;
+    padding: 20px; 
+}
+
+
+
 @media (max-width: 768px) {
+    .table-container {
+        display: block;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    table {
+        min-width: 700px; 
+    }
+
     .content-row td {
         padding: 10px 8px; 
     }
+
     .content-row td:first-child {
         width: 40%;
     }
+
     .content-row td:not(:first-child) {
         width: 20%;
     }
 }
-
 
 .section-5{
     margin-top: 80px;
@@ -535,5 +495,565 @@ strong, .paragrphy{
 }
 
 .section-6{
-    margin-top: 40px;
+    margin-top: 70px;
+    display: flex;
+    gap:20px;
+    justify-content: center;
 }
+
+h3{
+    color: #000;
+    padding: 30px 30px 0 30px;
+    font-size:50px;
+    font-weight: 700;
+    /* word-spacing: 10px; */
+    line-height: 70px;
+    margin-bottom: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: "Geist", sans-serif;
+}
+
+.para-head{
+    padding:30px 30px 0 30px;
+    font-size:25px;
+    font-weight:500;
+    font-family: "Geist", sans-serif;
+}
+
+.list{
+    color:#000;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-weight: 500;
+    padding: 30px 30px 0 30px;
+    font-size: 25px;
+    font-family: "Geist", sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 30px;
+    font-family: "Geist", sans-serif;
+}
+
+input, select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(151, 147, 147);
+}
+
+ textarea{
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(151, 147, 147);
+}
+
+
+
+.btns-submit{
+    padding:15px;
+    color:#0e0d0d;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Geist", sans-serif;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.agree{
+    font-size: 15px;
+    color: rgb(160, 157, 157);
+}
+
+
+
+
+.section-7{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(18, 24, 31);
+    padding: 80px;
+}
+
+.section-7-btns {
+    /* margin-top: 65px; */
+    background-color: rgb(59, 59, 218);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    word-spacing: 2px;
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+.section-8{
+    margin-top: 80px;
+
+}
+
+.section-end{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-icons{
+    display: flex;
+    gap: 20px;
+}
+
+
+.footer-list{
+    margin-top: 70px;
+    display: flex;
+    gap:16%;
+    flex-wrap:wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center;
+}
+
+
+h5{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Geist", sans-serif;
+}
+
+.list-of-list{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    font-family: "Geist", sans-serif;   
+}
+
+.list-in{
+    color: #818283;
+}
+
+.list-in:hover{
+    text-decoration: underline rgb(124, 121, 121);
+}
+
+
+
+.footer-section{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.ended{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box-inp{
+    display: flex;
+    gap: 15px;
+}
+
+
+.inp-email{
+    margin-left: 20px;
+    padding-inline: 80px;
+}
+
+.subscribe{
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.email-label{
+    font-size: 12px;
+    font-family: "Geist", sans-serif;   
+}
+
+
+
+.email-input{
+    margin-left: 40px;
+}
+
+
+.ended{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+#cemail-error, #fname-error, #lname-error, #cname-error, #url-error, #select-error, #text-error{
+    color:red;
+    font-size: 10px;
+}
+
+ @media(max-width:1001px){
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 50%;   
+    }
+     .logo-png{
+        align-self: flex-start;
+        height: 40px;
+        padding: 0;
+    } 
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-between;
+        gap: 28px;
+        width: 100%;
+    }
+
+    .fa-angle-down{
+        display:none;
+    }
+    
+    .nav{
+        display: none;
+        position: relative;
+        left: 50%;
+        right: 50%;
+    }
+    .navbar-lists-return{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+    .btn3{
+        display: none;
+    }
+    header{
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+    }
+    .fa-bars{
+        display: flex;
+    }
+
+    .sign-in{
+        display: none;
+        margin-top: 40px;
+        width: 100%;
+        position: relative;
+        right: 35%;
+        left: 50%;
+        margin-right: 50px;
+        text-align: center;
+        
+    }
+    .sign-return{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .btn3-sign{
+        display: flex;
+        background-color: aqua;
+        padding: 10px;
+        width:100%;
+        font-weight: 600;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .nav-2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-2{
+        align-self: flex-start;
+    }    
+
+
+
+    .bottom-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .final-footer{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+} 
+
+@media(min-width:320px) and (max-width:600px){
+    h2 {
+        margin-top:70px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .firstpara{
+        font-size: 16px;
+        line-height: 25px;
+        word-spacing: 1px;
+    }
+
+    .section-1{
+        padding: 34px;
+    }
+    .section-3{
+        margin-top: 75px;
+    }
+
+    .section-btns{
+        margin-top: 0;
+        display:flex;
+        flex-direction:column;
+    }
+
+    h1 {
+        color: #000;
+        padding: 0;
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom:10px;
+    }
+
+    .three-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+    .para-tag {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .section-5{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .para-textii{
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    strong, .paragrphy {
+        font-family: "Geist", sans-serif;
+        font-weight: 400;
+    }
+
+   .section-6{
+        display: flex;
+        flex-direction: column;
+   }
+
+    h2 {
+        margin-top: 70px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .section-7{
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .section-7-btns{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size:20px;
+        line-height: 25px;
+    }
+    .para-head{
+        font-size: 19px;
+    }
+    .list {
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-weight: 500;
+        padding: 30px 30px 0 30px;
+        font-size: 17px;
+        font-family: "Geist", sans-serif;
+    }
+    .section-end{
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #email-label{
+        font-size: 15px;
+        font-family: "Geist", sans-serif;
+    }
+
+    .email-input{
+        margin-left: 0;
+    }
+    .box-inp {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+
+@media(min-width:601px) and (max-width:1000px){
+    
+    .first-h2{
+        margin-top:70px;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .firstpara{
+        font-size: 25px;
+        line-height: 30px;
+        word-spacing: 1px;
+    }
+
+    .section-1{
+        padding: 28px;
+    }
+
+    .section-btns{
+        margin-top: 0;
+        display:flex;
+        flex-direction:column;
+    }
+
+    h1 {
+        color: #000;
+        padding: 0;
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom:10px;
+    }
+
+    .three-box {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: baseline;
+    }
+
+
+    .para-tag {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .section-5{
+        display: flex;
+        margin: 20px;
+    }
+
+    .para-textii{
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    strong, .paragrphy {
+        font-family: "Geist", sans-serif;
+        font-weight: 400;
+    }
+
+   .section-6{
+        display: flex;
+   }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .section-7{
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .section-7-btns{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .para-head{
+        font-size: 19px;
+    }
+    .list {
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-weight: 500;
+        padding: 30px 30px 0 30px;
+        font-size: 17px;
+        font-family: "Geist", sans-serif;
+    }
+    .section-end{
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #email-label{
+        font-size: 15px;
+        font-family: "Geist", sans-serif;
+    }
+}
+
+
+
+
+
+
+
