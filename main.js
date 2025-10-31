@@ -23,6 +23,39 @@ hamburge_image.addEventListener('click',()=>{
 
 
 
+
+
+
+  const toggles = document.querySelectorAll('.toggle-icon');
+
+  toggles.forEach(icon => {
+    icon.addEventListener('click', () => {
+      const dropdown = icon.closest('.list-of-list').querySelector('.dropdown-content');
+      dropdown.classList.toggle('active');
+      icon.classList.toggle('rotate');
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const form = document.getElementById('form')
 function Validation(event){
     event.preventDefault();

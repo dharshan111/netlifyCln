@@ -625,10 +625,15 @@ input, select{
     margin-top: 70px;
     display: flex;
     gap:13%;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
+    padding: 25px;
     margin-left: auto;
     margin-right: auto;
     justify-content:center;
+}
+
+.footer-list2{
+    display: none;
 }
 
 
@@ -930,8 +935,15 @@ h5{
     .section-end{
         display: flex;
         padding: 10px;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        /* justify-content: space-between; */
+        align-items: self-start;
+
+    }
+
+    .section-icons{
+        margin-left: 10px;
     }
 
     #email-label{
@@ -948,8 +960,55 @@ h5{
         gap: 15px;
         flex-direction: column;
     }
-}
 
+
+    .footer-list{
+        display: none;
+    }
+    .footer-list2{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px;
+    }
+    .head-foot-2{
+        font-weight: 550;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-content.active {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: -20px;
+        margin-left: 20px;
+        
+    }
+
+    .head-foot-2{
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border:1px solid rgb(241, 238, 238);
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+  .toggle-icon {
+        display: flex;
+        transition: transform 0.2s ease;
+  }
+
+  .toggle-icon.rotate {
+    transform: rotate(-180deg);
+  }
+
+    
+}
 
 @media(min-width:601px) and (max-width:1000px){
     
