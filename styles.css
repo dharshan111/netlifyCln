@@ -121,6 +121,7 @@ h2{
     font-size:67px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-top: 90px;
     font-family: "Geist", sans-serif;
 }
 
@@ -170,7 +171,6 @@ h2{
 .section-btns{
     display: flex;
     align-items: center;
-    margin-top: 65px;
     gap: 15px;
 }
 
@@ -834,7 +834,7 @@ h5{
     }
 
     .firstpara{
-        font-size: 16px;
+        font-size: 20px;
         line-height: 25px;
         word-spacing: 1px;
     }
