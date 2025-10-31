@@ -17,7 +17,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
+    z-index: 9000;
+    width: 100%;
 }
 
 .nav_list{
@@ -615,13 +617,14 @@ input, select{
 .section-icons{
     display: flex;
     gap: 20px;
+    opacity:0.5;
 }
 
 
 .footer-list{
     margin-top: 70px;
     display: flex;
-    gap:16%;
+    gap:13%;
     flex-wrap:wrap;
     margin-left: auto;
     margin-right: auto;
@@ -631,7 +634,7 @@ input, select{
 
 h5{
     color: #000;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
     font-family: "Geist", sans-serif;
@@ -680,19 +683,26 @@ h5{
 .subscribe{
     background-color: aqua;
     padding: 15px;
+    color: #495057;
     border-radius: 5px;
+    font-weight: 900;
+    font-family: "poppins", sans-serif;
 }
 
-.email-label{
+#email-label{
     font-size: 12px;
-    font-family: "Geist", sans-serif;   
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;   
 }
 
 
 
 .email-input{
     margin-left: 40px;
+    width: 360px;
+    border: 1px solid #aba8a8;
 }
+
 
 
 .ended{
@@ -803,6 +813,7 @@ h5{
 
     .bottom-list{
         display: flex;
+        margin: 0;
         flex-wrap: wrap;
     }
 
@@ -930,6 +941,7 @@ h5{
 
     .email-input{
         margin-left: 0;
+        width: 100%;
     }
     .box-inp {
         display: flex;
@@ -1046,10 +1058,15 @@ h5{
     }
 
     #email-label{
-        font-size: 15px;
-        font-family: "Geist", sans-serif;
+        font-size: 12px;
+        font-family: "Mulish", sans-serif;
     }
+    
 }
+
+
+
+
 
 
 
